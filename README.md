@@ -1,4 +1,4 @@
-# pricing-analyst-used-cars
+# Pricing-Analyst-Used-Cars
 Pricing Analyst with Used Cars Dataset — Market Analysis, Modeling, and Dashboard
 
 
