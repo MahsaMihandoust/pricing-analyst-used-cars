@@ -11,7 +11,7 @@ This project simulates the role of a Pricing Analyst by analyzing market trends,
 - Build interactive dashboards for pricing insights.
 
 ## 🗂️ Project Structure
-- **data/**: (https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data/data)
+- **data/**: [Kaggle Used Cars Dataset](https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data/data)
 - **notebooks/**: Google Colab for EDA, modeling, and visualization.
 - **sql/**: SQL scripts for data manipulation.
 - **reports/**: Final presentations and executive summaries.
