@@ -68,8 +68,31 @@ The following new features were created to support modeling and analysis:
 ---
 
 #### 📊 Stage 3: Exploratory Data Analysis (EDA)
-- Visualized key trends using **histograms, boxplots, and groupby summaries**.
-- Explored pricing patterns by **manufacturer, vehicle age, and condition**.
+
+To understand the key drivers of vehicle price and prepare for predictive modeling, exploratory analysis was conducted on the cleaned dataset.
+
+#### 🔍 Distribution Analysis
+- **Price**: Most listings were priced between $5,000 and $30,000, with a few outliers above $100,000.
+- **Odometer**: Vehicles were mostly driven between 10,000 and 250,000 miles.
+- **Vehicle Age**: Price negatively correlated with vehicle age.
+
+#### 📉 Relationship Analysis
+- A **scatterplot of price vs. vehicle age** revealed a clear downward trend, confirming depreciation over time.
+- **Boxplots** showed:
+  - Newer vehicles and those in “excellent” condition have significantly higher price distributions.
+  - Certain brands (e.g., Toyota, Honda, Ford) cluster in distinct pricing bands.
+
+#### 🧠 Insights from Correlation
+- `vehicle_age` and `odometer` both had strong negative correlation with price.
+- `is_clean_title` showed a slight positive correlation with higher prices.
+- `price_per_mile` helped normalize comparisons between high-mileage vs. low-mileage cars.
+
+#### 📦 Summary Tables Created:
+- Average price by **vehicle condition**, **manufacturer**, and **year**
+- Count of listings by **brand**, **year**, and **condition category**
+
+These insights guided feature selection and informed the upcoming modeling and pricing strategy stages.
+
 
 ---
 
