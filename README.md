@@ -69,30 +69,43 @@ The following new features were created to support modeling and analysis:
 
 #### 📊 Stage 3: Exploratory Data Analysis (EDA)
 
-To understand the key drivers of vehicle price and prepare for predictive modeling, exploratory analysis was conducted on the cleaned dataset.
+
+To identify price drivers and guide modeling, detailed exploration was performed on 365,205 cleaned used vehicle listings from 42 unique manufacturers, spanning model years 1900 to 2022.
 
 #### 🔍 Distribution Analysis
-- **Price**: Most listings were priced between $5,000 and $30,000, with a few outliers above $100,000.
-- **Odometer**: Vehicles were mostly driven between 10,000 and 250,000 miles.
-- **Vehicle Age**: Price negatively correlated with vehicle age.
+- **Price**: Most listings are between $5,000 and $30,000, peaking around $10,000.
+- **Odometer**: Mileage typically ranges from 10,000 to 250,000 miles.
+- **Vehicle Age**: Clear downward trend in price with increasing vehicle age.
 
-#### 📉 Relationship Analysis
-- A **scatterplot of price vs. vehicle age** revealed a clear downward trend, confirming depreciation over time.
-- **Boxplots** showed:
-  - Newer vehicles and those in “excellent” condition have significantly higher price distributions.
-  - Certain brands (e.g., Toyota, Honda, Ford) cluster in distinct pricing bands.
+![Price Histogram](./visuals/price_histogram.JPG)
+![Odometer Histogram](./visuals/odometer_histogram.JPG)
 
-#### 🧠 Insights from Correlation
-- `vehicle_age` and `odometer` both had strong negative correlation with price.
-- `is_clean_title` showed a slight positive correlation with higher prices.
-- `price_per_mile` helped normalize comparisons between high-mileage vs. low-mileage cars.
+#### 📉 Relationship Insights
+- **Price vs. Age**: Shows depreciation as vehicles get older.
+- **Condition & Price**:
+  - "New", "Good", and "Like New" vehicles had the highest average prices.
+- **Top Manufacturers**:
+  - Premium brands like Ferrari and Tesla had the highest average prices.
+  - Mass-market brands like Ford, Toyota, and Honda were priced mid-range.
 
-#### 📦 Summary Tables Created:
-- Average price by **vehicle condition**, **manufacturer**, and **year**
-- Count of listings by **brand**, **year**, and **condition category**
+![Price vs. Vehicle Age](./visuals/Price_vs_Vehicle_Age.JPG)
+![Price by Condition](./visuals/Average_Price_by_Condition.JPG)
+![Top 10 Manufacturer Boxplot](./visuals/Average_Price_by_Top_10_Manufacturers.JPG)
 
-These insights guided feature selection and informed the upcoming modeling and pricing strategy stages.
+#### 📊 Summary Tables
+- **By Condition**: Prices ranged from ~$4,200 (Fair) to ~$23,000 (New).
+- **By Manufacturer**: Ferrari ($74k), Tesla ($40k), Ram ($31k).
+- **By Year**: Newer vehicles (2020–2022) priced >$35,000 on average.
 
+![Summary: Condition](./visuals/Average_Price_by_Condition.JPG)
+![Summary: Manufacturer](./visuals/Average_Price_by_Manufacturer.JPG)
+![Summary: Year](./visuals/Average_Price_by_Vehicle_Year.JPG)
+
+#### 🔗 Correlation Insights
+- Strong negative correlation between price and both odometer (-0.56) and vehicle age (-0.39)
+- Moderate positive correlation between price and price-per-mile (0.41)
+
+![Correlation Matrix](./visuals/Correlation_Matrix.JPG)
 
 ---
 
