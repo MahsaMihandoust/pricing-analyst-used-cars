@@ -110,8 +110,57 @@ To identify price drivers and guide modeling, detailed exploration was performed
 ---
 
 #### 🤖 Stage 4: Modeling & Forecasting
-- Built regression models using **Scikit-learn** and **Statsmodels** to predict vehicle prices.
-- Evaluated model performance using metrics like **RMSE**, **MAE**, and **R²**.
+
+To predict vehicle prices and support data-driven pricing strategies, multiple regression models were developed and evaluated. The models used a log-transformed target variable (`price`) and included both numeric and encoded categorical features.
+
+#### 🧠 Model Improvements
+
+To enhance prediction accuracy, the following steps were taken:
+
+- ✅ Applied **log transformation** to the target variable (`price`) to reduce skewness
+- ✅ Used **one-hot encoding** for categorical features: `manufacturer`, `condition`, and `transmission`
+- ✅ Included both **linear** and **tree-based models** to compare interpretability vs. performance
+- ✅ Evaluated **six models** to determine the best fit for forecasting:
+
+#### 🧪 Models Evaluated
+
+- Linear Regression
+- Ridge Regression
+- Lasso Regression
+- Random Forest Regressor
+- XGBoost Regressor
+- Gradient Boosting Regressor
+
+#### 📊 Evaluation Metrics
+
+| Model               | RMSE       | MAE        | R²     |
+|--------------------|------------|------------|--------|
+| Linear Regression  | $9,998.44  | $6,638.35  | 0.4943 |
+| Ridge Regression   | $11,196.84 | $7,563.75  | 0.3658 |
+| **Random Forest**  | **$6,128.34** | **$2,942.84** | **0.8100** |
+| XGBoost            | $8,837.25  | $5,721.34  | 0.6049 |
+| Gradient Boosting  | $9,346.74  | $6,066.01  | 0.5581 |
+
+📸 _Screenshot: Model evaluation summary table_
+
+#### 🔍 Feature Importance (Random Forest)
+
+The Random Forest model identified the following most influential features in predicting used car prices:
+
+📸 _Screenshot: Top 15 Feature Importances Bar Chart_
+
+#### 📈 Predicted vs. Actual Prices
+
+The scatterplot below visualizes how well the Random Forest model approximated actual vehicle prices:
+
+📸 _Screenshot: Predicted vs Actual Price Scatterplot_
+
+#### ✅ Conclusion
+
+- The **Random Forest Regressor** delivered the best performance, significantly outperforming linear models.
+- It explained over **81% of the variance** in price and had the lowest prediction error.
+- This model will power the pricing simulations in Stage 5: Pricing Strategy Development.
+
 
 ---
 
