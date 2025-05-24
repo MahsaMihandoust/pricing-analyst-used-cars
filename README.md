@@ -164,11 +164,46 @@ The scatterplot below visualizes how well the Random Forest model approximated a
 
 ---
 
-#### 📈 Stage 5: Visualization & Dashboard
-- Created interactive dashboards in **Power BI** showing:
-  - Average price by **vehicle type and age**
-  - Inventory composition by **region and condition**
-  - Forecasted vs. actual prices
+#### 💵 Stage 5: Pricing Strategy Development
+
+Using the predictions from the best-performing Random Forest model, a pricing strategy was developed to identify underpriced and overpriced listings, simulate pricing logic, and prepare actionable insights for decision-makers.
+
+#### 🎯 Objective
+To simulate real-world pricing decisions by:
+- Comparing actual vs. predicted market prices
+- Flagging listings as underpriced, overpriced, or fairly priced
+- Applying strategy rules such as markdowns for aged inventory
+- Grouping listings into business-aligned pricing bands
+
+#### 🧠 Strategy Logic Applied
+
+- **Overpriced:** Price is more than **15% above** model prediction  
+- **Underpriced:** Price is more than **15% below** model prediction  
+- **Fair:** Within ±15% of model prediction  
+- **Aged Inventory Rule:** Vehicles older than **10 years** get a **5% markdown** off the predicted price  
+- **Pricing Bands:**
+  - **Budget:** Price < $10,000
+  - **Mid-Range:** $10,000–$30,000
+  - **Premium:** > $30,000
+
+#### 🔍 Key Output Columns
+- `price` – original listing price  
+- `predicted_price` – model-estimated fair price  
+- `price_pct_diff` – % difference between actual and predicted price  
+- `pricing_flag` – Overpriced, Underpriced, Fair  
+- `recommended_price` – Adjusted price for aged vehicles  
+- `pricing_band` – Budget, Mid-Range, or Premium category
+
+#### 📸 Screenshots Included
+- Table of predicted vs. actual prices + pricing flag  
+- Bar chart: **Pricing flags by top manufacturers**  
+- Bar chart: **Vehicle count by pricing band**  
+- Sample of aged inventory with 5% markdown logic  
+
+---
+
+This structured strategy lays the foundation for insights to be visualized in Stage 6 (Power BI Dashboard) and reported in executive presentations.
+
 
 ---
 
