@@ -200,10 +200,6 @@ To simulate real-world pricing decisions by:
 - Bar chart: **Vehicle count by pricing band**  
 - Sample of aged inventory with 5% markdown logic  
 
----
-
-This structured strategy lays the foundation for insights to be visualized in Stage 6 (Power BI Dashboard) and reported in executive presentations.
-
 
 ---
 
