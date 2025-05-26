@@ -203,6 +203,41 @@ To simulate real-world pricing decisions by:
 
 ---
 
+### 📊 Stage 6: Power BI Dashboard
+
+The Power BI dashboard transforms the cleaned and modeled dataset into a visual pricing intelligence tool. It brings together model-driven insights and business rules to support strategic decision-making for used vehicle pricing.
+
+#### 📌 Dashboard Highlights
+
+1. **📈 Avg Listing Price vs Model Prediction**
+   - Shows average vehicle price by manufacturer.
+   - Highlights how brand influences pricing expectations and positioning.
+
+2. **💰 Strategic Pricing Classification**
+   - Visualizes the proportion of listings flagged as underpriced, overpriced, or fair based on model predictions.
+   - Enables quick identification of pricing inefficiencies.
+
+3. **🔍 Aged Inventory Pricing Recommendations**
+   - Compares actual, predicted, and strategically recommended prices for vehicles older than 10 years.
+   - Implements a 5% markdown rule for aged inventory to improve competitiveness.
+
+4. **🎯 Market Segmentation by Price Tier**
+   - Groups vehicles into three pricing bands:
+     - **Budget (< $10,000)** – Older, lower-cost vehicles for price-sensitive buyers.
+     - **Mid-Range ($10,000–$30,000)** – Mainstream vehicles for everyday consumers.
+     - **Premium (> $30,000)** – Luxury or high-performance models targeting upscale buyers.
+   - Helps evaluate inventory mix and align pricing and marketing strategies accordingly.
+
+#### 🧠 Business Value
+
+This dashboard provides actionable insights for pricing managers:
+- Detects over/underpricing at scale
+- Applies pricing strategies based on inventory age and value tier
+- Guides marketing and sales focus by pricing band distribution
+- Supports executive decision-making with visual, data-backed narratives
+
+---
+
 #### 📝 Stage 6: Reporting
 - Summarized insights in **executive-ready presentation slides**.
 - Uploaded key assets to GitHub:
