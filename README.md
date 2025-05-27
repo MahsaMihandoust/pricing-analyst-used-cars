@@ -1,4 +1,7 @@
-# Pricing-Analyst-Used-Cars
+# Data Science Project on Competitive Vehicle Pricing - Predicting and Optimizing Used Car Prices!
+
+![1](https://github.com/user-attachments/assets/678a9407-901f-46ca-87b8-276647517bc9)
+
 Pricing Analyst with Used Cars Dataset — Market Analysis, Modeling, and Dashboard
 
 
