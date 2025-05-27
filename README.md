@@ -238,24 +238,20 @@ This dashboard provides actionable insights for pricing managers:
 
 ---
 
-#### 📝 Stage 6: Reporting
-- Summarized insights in **executive-ready presentation slides**.
-- Uploaded key assets to GitHub:
-  - Colab notebooks
-  - SQL queries
-  - Cleaned datasets
-  - Power BI dashboards
+### 🧾 Stage 7: Reporting & Executive Summary
+
+The final deliverable is a professional PowerPoint report that communicates the business problem, modeling results, pricing strategy logic, and Power BI dashboard insights.
 
 
-## 📊 Key Deliverables
-- Market Analysis Report
-- Pricing Forecasting Model
-- Interactive Power BI Dashboard
-- Business Insights & Recommendations
 
-## 📎 Project Links
-- [Power BI Dashboard](#link)
-- [Full Project Repository](#this-repo)
+Key content includes:
+- Project objective and data sources
+- EDA and modeling results
+- Strategic pricing insights
+- Visuals from Power BI dashboard
+- Business recommendations and next steps
+
+---
 
 ## 👤 Author
 - Mahsa Mihandoust | [LinkedIn](https://www.linkedin.com/in/your-profile)
