@@ -80,8 +80,6 @@ To identify price drivers and guide modeling, detailed exploration was performed
 - **Odometer**: Mileage typically ranges from 10,000 to 250,000 miles.
 - **Vehicle Age**: Clear downward trend in price with increasing vehicle age.
 
-![Price Histogram](./visuals/price_histogram.JPG)
-![Odometer Histogram](./visuals/odometer_histogram.JPG)
 
 #### 📉 Relationship Insights
 - **Price vs. Age**: Shows depreciation as vehicles get older.
@@ -91,24 +89,16 @@ To identify price drivers and guide modeling, detailed exploration was performed
   - Premium brands like Ferrari and Tesla had the highest average prices.
   - Mass-market brands like Ford, Toyota, and Honda were priced mid-range.
 
-![Price vs. Vehicle Age](./visuals/Price_vs_Vehicle_Age.JPG)
-![Price by Condition](./visuals/Average_Price_by_Condition.JPG)
-![Top 10 Manufacturer Boxplot](./visuals/Average_Price_by_Top_10_Manufacturers.JPG)
 
 #### 📊 Summary Tables
 - **By Condition**: Prices ranged from ~$4,200 (Fair) to ~$23,000 (New).
 - **By Manufacturer**: Ferrari ($74k), Tesla ($40k), Ram ($31k).
 - **By Year**: Newer vehicles (2020–2022) priced >$35,000 on average.
 
-![Summary: Condition](./visuals/Average_Price_by_Condition.JPG)
-![Summary: Manufacturer](./visuals/Average_Price_by_Manufacturer.JPG)
-![Summary: Year](./visuals/Average_Price_by_Vehicle_Year.JPG)
 
 #### 🔗 Correlation Insights
 - Strong negative correlation between price and both odometer (-0.56) and vehicle age (-0.39)
 - Moderate positive correlation between price and price-per-mile (0.41)
-
-![Correlation Matrix](./visuals/Correlation_Matrix.JPG)
 
 ---
 
